@@ -49,5 +49,11 @@ plt.show()
 # Derivative df(x)/dx_1 = 6x_1; df(x)/d_x2 = 5e^x_2 -> can be rewritten as gradient vector
 
 #8 What is the gradient of the function f(x) = ||x||_2? What happens for x=0?
-#Assume multiple x
+#Assume vector x then: df(x)/dx_i = ((sum_{from i=1 to n} x_i^2)^0.5)' = (sum_{from i=1 to n} x_i^2)^(-0.5) * x_i
+
+#9 Can you write out the chain rule for the case where u = f(x,y,z) and x=x(a,b), y=(a,b) and z=z(a,b)?
+#du/da = df/dx dx/da + df/dy dy/da + df/dz dz/da; du/db = df/dx dx/db + df/dy dy/db + df/dz dz/db -> total derivative would be the sum of both.
+
+#10 Given a function f(x) that is invertible, compute the derivative of its inverse f^-1(x). Here we have that f^-1(f(x)) = x and conversely f(f^-1(y)) = y. Hint: Use these properties in your derivation.
+# Use Chain rule (f^-1(f(x)))' = f^-1'(f(x)) * f'(x) => 1 = f^-1(y) * f'(x) => 1/f'(x) = f^-1(y)
 
