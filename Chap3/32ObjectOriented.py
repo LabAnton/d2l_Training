@@ -7,6 +7,14 @@ import inspect
 import matplotlib.pyplot as plt
 from matplotlib_inline import backend_inline
 
+ 1 import time
+  2 import numpy as np
+  3 import torch as t
+  4 from torch import nn
+  5 import collections
+  6 import inspect
+  7 import matplotlib.pyplot as plt
+  8 from matplotlib_inline import backend_inline
 class HyperParameters:
     def save_hyperparameters(self, ignore=[]):
         #Save function arguments into class attributes
