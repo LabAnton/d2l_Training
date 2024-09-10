@@ -5,7 +5,6 @@ from torch import nn
 import collections
 import inspect
 import matplotlib.pyplot as plt
-from matplotlib_inline import backend_inline
 
 class HyperParameters:
     def save_hyperparameters(self, ignore=[]):
